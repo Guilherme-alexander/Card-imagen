@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CDN FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SCRIPT JS -->
+    <script src="js/script.js" defer></script>
+    <title>Images Before Upload Using Javascript</title>
+</head>
+<body>
+    
+    <div class="container">
+        <input type="file" id="file-input" accept="image/png ,image/jpeg" onchange="preview();" multiple>
+        <label for="file-input">
+            <i class="fas fa-cloud-upload-alt"></i> &nbsp; Choose A Photo
+        </label>
+        <p id="num-of-files">no files chosen</p>
+        <div id="images"></div>
+    </div><!-- container -->
+
+</body>
+</html>
